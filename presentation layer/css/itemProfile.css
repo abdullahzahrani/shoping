@@ -1,0 +1,139 @@
+
+.img2{
+    margin-bottom:10px;
+    text-align: center;
+}
+.card {
+    background-color: var(--background);
+    display: block;
+    min-height: 90px;
+    padding: 15px;
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+    20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+    30px -30px 0 -3px var(--background), 30px -30px var(--orange),
+    40px -40px 0 -3px var(--background), 40px -40px var(--red);
+    transition: box-shadow 1s, top 1s, left 1s;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.card:hover {
+    top: -40px;
+    left: 40px;
+    box-shadow: 0 0 0 -3px var(--background), 0 0 0 0 var(--green),
+    0 0 0 -3px var(--background), 0 0 0 0  var(--yellow),
+    0 0 0 -3px var(--background), 0 0 0 0  var(--orange),
+    0 0 0 -3px  var(--background), 0 0 0 0  var(--red);
+}
+.img2 img{
+    width:80%;
+    border-radius:10px;
+
+}
+#inf{
+    margin-bottom: 30px;
+}
+
+#inf h3 ,#inf p{
+    padding: 5px;
+
+}
+
+
+.cnt{
+
+    padding-left: 10px;
+    margin: 10px 0;
+    padding-bottom: 19px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.cnt h3 , p{
+    padding-left: 20px;
+
+}
+
+
+p label input , p textarea {
+    border: 1px solid #ccc;
+}
+
+.add_review{
+    margin-bottom: 35px;
+}
+.add_review p{
+    padding: 10px;
+}
+.add_review textarea{
+width:100%;
+
+
+}
+#pda{
+    border-bottom: 1px solid silver;
+}
+
+#submit input{
+
+        color: #000;
+        width: 50%;
+        line-height: 30px;
+        border-radius: 6px;
+        font-size: 18px;
+        font-weight: 700;
+      position: relative;
+     left: 25%;
+
+    border: 1px solid #332d2d ;
+    background-color:rgba(0, 0, 0, 0.1);
+
+
+}
+#submit input:hover{
+background-color:rgba(0, 0, 0, 0.2);
+}
+
+.rate {
+    height: 46px;
+    float: left;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    right: -10px;
+    display: contents;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #ffc700;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c2aa54;
+}
+.ret img{
+    width: 20px;
+}
